@@ -1,0 +1,83 @@
+<style>
+/* Stile della barra di scorrimento verticale */
+::-webkit-scrollbar {
+  width: 8px !important; /* Larghezza della barra di scorrimento verticale */
+  height: 8px !important; /* Altezza della barra di scorrimento orizzontale */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888888 !important; /* Colore della parte mobile della barra di scorrimento */
+  border-radius: 10px !important; /* Arrotonda i bordi della "capsula" */
+}
+
+/* Rendi trasparente la parte sotto alla "capsula" */
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0); /* Aggiunta per supportare alcuni browser */
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus,
+a:visited,
+a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+.loader {
+  display: flex;
+}
+
+/* Media query per dispositivi con larghezza massima di 680px */
+@media (min-width: 478px) and (max-width: 680px) {
+  #search-list {
+    margin-right: 0px;
+  }
+
+  #search-wrapper {
+    right: -85px;
+    width: 90vw;
+  }
+
+  #search-pop-up {
+    margin-right: 35px;
+  }
+
+  #search-list {
+    right: -100px !important;
+    width: 91vw;
+  }
+}
+
+/* Media query per dispositivi con larghezza massima di 555px */
+@media screen and (max-width: 555px) {
+  #footer-column {
+    column-gap: 5.5vw;
+  }
+}
+
+/* Media query per dispositivi con larghezza massima di 540px */
+@media screen and (max-width: 540px) {
+  #text-result {
+    font-size: 12px;
+  }
+}
+
+/* Altri stili globali */
+body {
+  overflow-x: hidden !important;
+}
+</style>
